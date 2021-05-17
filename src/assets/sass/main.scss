@@ -1,0 +1,52 @@
+/*!
+***
+* Dataplay – Mustang Evolution
+***
+* Option DWM – HEAJ Namur
+*
+* version 1.0
+* author: Aude Schaff <audeschaff.be>, Jérôme Haesen < >, Aureliane Ferard < >
+*
+***
+*/
+
+@use 'components/buttons';
+@use 'components/grids';
+@use 'components/type';
+@use 'components/links';
+@use 'components/slider';
+
+@use 'layout/header';
+@use 'layout/menu';
+@use 'layout/footer';
+@use 'layout/lexique';
+
+
+@use 'utils/variables'; 
+
+
+
+
+/* HERE WRITE THINGS TO DO
+
+SETUP
+	OK -- setup HTML et metadata 
+	-- setup architecture SASS
+ 	OK -- setup modern-nomalize
+	OK -- setup gsap 
+	-- setup variables scss
+	-- metashare + favicon modify
+
+TYPE
+	-- Changer typographie selon design + ratio
+
+LANDING ≠ EXPERIENCE COMPARATIVE
+	-- 
+
+CREDITS
+	-- Ajouter crédits 
+
+JS & JSON
+	-- Import JSON dans le projet
+	-- Import GSAP dans projet
+*/
