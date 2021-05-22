@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<!-- AUDE ET JEROME -->
-
-<!-- main-->
-
 <head>
 
     <meta charset="UTF-8">
@@ -30,11 +26,65 @@
 
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
+
+    <!-- FONTS -->
+    <link rel="stylesheet" href="https://use.typekit.net/osy6uar.css">
+
     <script src="assets/js/main.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.1/chart.min.js"></script>
+
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
+
+    <header class="header header--play">
+        <nav class="menu menu--play">
+            <!-- Change this avec un logo-->
+            <h1 class="menu__logo p-bold">Logo</h1>
+        </nav>
+    </header>
+
+    <main class="main main--play">
+        <div class="introduction">
+            <!-- Change text introduction -->
+            <p>Le site est un comparatif de différentes Ford Mustang Coupé. Vous pouvez par exemple y comparer la
+                vitesse de pointe, le nombre de chevaux ou encore le bruit du moteur.</p>
+            <p>Explication des comparaisons entre deux modèles. Volonté de vulgariser le domaine de l’automobile, de
+                casser cette image peu accessible à cause de la technique.</p>
+            <a href="#" class="link link--cta">Débuter <svg class="link__svg" width="30" height="21" viewBox="0 0 30 21"
+                    fill="none">
+                    <path d="M0 10.5H28.5M28.5 10.5L19 1M28.5 10.5L19 20" stroke="#131313" />
+                </svg></a>
+        </div>
+
+        <div class="play">
+            <section class="section section--principal">
+
+                <div class="comparaison">
+                    <!-- Ajouter modale comparaison -->
+                    <div class="modale-comparaison">
+                        <!-- Jérôme amuse toi ici -->
+                        <!-- data-section -->
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="lexique">
+            <!-- en dur -->
+            <!-- data-section -->
+            <div class="my-chart-ctn">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+        <div class="selection">
+            <!-- data-section -->
+            <!-- interaction json -->
+        </div>
+    </main>
+
 
 </body>
 

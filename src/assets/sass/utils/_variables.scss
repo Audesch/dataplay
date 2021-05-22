@@ -1,86 +1,13 @@
-/* 
--- PROXIMA NOVA -- 
-
-BOLD
-font-family: proxima-nova,sans-serif;
-font-weight: 700;
-font-style: normal;
-
-SEMIBOLD
-font-family: proxima-nova,sans-serif;
-font-weight: 600;
-font-style: normal;
-
-REGULAR
-font-family: proxima-nova,sans-serif;
-font-weight: 400;
-font-style: normal;
-
-LIGHT
-font-family: proxima-nova,sans-serif;
-font-weight: 300;
-font-style: normal;
-
-MEDIUM
-font-family: proxima-nova,sans-serif;
-font-weight: 500;
-font-style: normal;
-
--- DARKER GROTESQUE -- 
-*/
-
-
-/* SETUP VARIABLES
-    -- colors + darktheme conversion
-    -- fonts
-*/
-
 :root{
-    --color-bg: #FFFFFF;
-    --color-bg2: #F2F2F2;
+    --color-bg: #F9F9F9;
+    --color-bg2: #FFFFFF;
     --color-text: #323232;
     --color-text-offset: #FFFFFF;
-    --color-primary: #0442FF;
-    --color-secondary: #0029A6;
-    --color-state: #0442FF;
-    --color-details: #8b8b8b;
-
-    --font-light: 300;
-	--font-regular: 400;
-	--font-semibold: 600;
-	--font-bold: 700;
+    --color-primary: #323232;
+    --color-secondary: #696969;
+    --color-state: #A7A7A7;
+    --color-details: #F2F2F2;
 }
 
-@media(prefers-color-scheme: dark){
-    :root{
-        --color-bg: #323232;
-        --color-bg2: #323232;
-        --color-text: #FFFFFF;
-        --color-text-offset: #323232;
-        --color-primary: #FFFFFF;
-        --color-secondary: #FFFFFF;
-        --color-state: #0442FF;
-        --color-details: #FFFFFF;
-    }
-}
 
-[data-theme= 'light']{
-    --color-bg: #FFFFFF;
-    --color-bg2: #F2F2F2;
-    --color-text: #323232;
-    --color-text-offset: #FFFFFF;
-    --color-primary: #0442FF;
-    --color-secondary: #0029A6;
-    --color-state: #0442FF;
-    --color-details: #8b8b8b;
-}
-[data-theme= 'dark']{
-    --color-bg: #323232;
-    --color-bg2: #323232;
-    --color-text: #FFFFFF;
-    --color-text-offset: #323232;
-    --color-primary: #FFFFFF;
-    --color-secondary: #FFFFFF;
-    --color-state: #0442FF;
-    --color-details: #FFFFFF;
-}
+/* Changer les noms des vraiables */

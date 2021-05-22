@@ -5,25 +5,24 @@
 * Option DWM – HEAJ Namur
 *
 * version 1.0
-* author: Aude Schaff <audeschaff.be>, Jérôme Haesen < >, Aureliane Ferard < >
+* authors: Aude Schaff <audeschaff.be>, Jérôme Haesen < >, Aureliane Ferard < >
 *
 ***
 */
 
 @use 'components/buttons';
+@use 'components/charts';
 @use 'components/grids';
-@use 'components/type';
 @use 'components/links';
 @use 'components/slider';
+@use 'components/type';
 
-@use 'layout/header';
-@use 'layout/menu';
 @use 'layout/footer';
+@use 'layout/header';
 @use 'layout/lexique';
-
+@use 'layout/menu';
 
 @use 'utils/variables'; 
-
 
 
 
@@ -31,17 +30,18 @@
 
 SETUP
 	OK -- setup HTML et metadata 
-	-- setup architecture SASS
+	OK -- setup architecture SASS
  	OK -- setup modern-nomalize
-	OK -- setup gsap 
+	OK -- setup gsap (voir si Ajax ou Vanilla ?)
 	-- setup variables scss
 	-- metashare + favicon modify
 
 TYPE
-	-- Changer typographie selon design + ratio
+	OK -- Changer typographie selon design + ratio
 
-LANDING ≠ EXPERIENCE COMPARATIVE
-	-- 
+LANDING 
+	OK -- HTML
+	-- SASS
 
 CREDITS
 	-- Ajouter crédits 

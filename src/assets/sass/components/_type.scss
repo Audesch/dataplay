@@ -1,7 +1,7 @@
 @use "utils/variables" as v;
 
 body{
-    font-family: proxima-nova,sans-serif;
+    font-family: runda, sans-serif;
     font-size: 16px;
     line-height: 1.4;
     font-weight: var(--font-regular);
@@ -11,58 +11,48 @@ body{
 }
 
 /* MOBILE TYPE */
-
+/* ratio 1.250 */
 .title{
-    font-family: 'Darker Grotesque', sans-serif;
-    line-height: 1;
+    font-family: aktiv-grotesk, sans-serif;
+    line-height: 1.2;
 
     &--big{
-        font-size: 51px;
-        font-weight: var(--font-light);
+        font-size: 31px;
+        font-weight: 500;
         margin: 0;
         letter-spacing: -1px;
-        max-width: 560px;
     }
     &--middle{
-        font-size: 38px;
-        font-weight: var(--font-semibold);
+        font-size: 25px;
+        font-weight: 500;
         margin: 0;
     }
     &--small{
-        font-size: 29px;
-        font-weight: var(--font-semibold);
+        font-size: 20px;
+        font-weight: 400;
         margin: 0;
     }
-    &--bold{
-        font-weight: var(--font-semibold);
+    &--last{
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0;
     }
 }
 
-.headline{
-    font-size: 16px;
-    font-weight: var(--font-semibold);
-}
-.highlight{
-    font-family: 'Darker Grotesque', sans-serif;
-    margin: 3rem 0rem;
-    font-size: 21px;
-    line-height: 1.3;
-    font-weight: 600;
-}
 .p-bold{
     font-size: 16px;
-    font-weight: var(--font-semibold);
-    font-family: proxima-nova,sans-serif;
+    font-weight: 500;
 }
+
 .outline{
     font-size: 16px;
-    font-weight: var(--font-semibold);
-    letter-spacing: 2%;
+    font-weight: 500;
+    letter-spacing: 8%;
     text-transform: uppercase;
     line-height: 1;
 }
 
-.copyright, .legend{
+.copyright{
     font-size: 14px;
 }
 
@@ -70,25 +60,28 @@ body{
     color: var(--color-primary);
 }
 
+
 @media (min-width: 768px){
     body{
         font-size: 17px;
     }
     .title{
         &--big{
-            font-size: 71px;
-            max-width: 60vw;
+         font-size: 52px;   
         }
         &--middle{
-            font-size: 53px;
+         font-size: 33px;
         }
         &--small{
-            font-size: 40px;
+         font-size: 27px;
+        }
+        &--last{
+            font-size: 21px;
         }
     }
     .headline{
         font-size: 17px;
-        max-width: 445px;
+        
         
     }
     .p-bold{
@@ -105,28 +98,28 @@ body{
 
 @media (min-width: 1024px){
 
-    /* 1.414 ratio, 17px */
+    /* 1.333 ratio, 17px */
     .title{
         &--big{
-            font-size: 96px;
+            font-size: 72px;
         }
         &--middle{
-            font-size: 68px;
+            font-size: 40px;
         }
         &--small{
-            font-size: 48px;
+            font-size: 30px;
         }
-    }
-    .headline{
-        font-size: 17px;
-        
+        &--last{
+            font-size: 23px;
+        }
+
     }
     .p-bold{
         font-size: 17px;
     
     }
     .outline{
-        font-size: 17px;
+        font-size: 16px;
     }
     
     .copyright{
