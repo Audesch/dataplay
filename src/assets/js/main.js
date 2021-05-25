@@ -1,37 +1,38 @@
 "use strict";
 
-var ctx = document.querySelector('#myChart').getContext('2d');
+// DARK MODE + LOCAL STORAGE
+// var lien = document.querySelectorAll(".link--menu");
 
-var myChart = new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: ['Mustang1', 'Mustang2'],
-        datasets: [{
-            data: [12, 19],
-            label: {
-                display: false
-            },
-            backgroundColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)'],
-            maxBarThickness: 20,
-        }],
-    },
-    options: {
-        plugins: {
-            legend: false,
-        },
-        scales: {
-            x: {
-                display: false,
-                grid: {
-                    offset: false
-                }
-            },
-            y: {
-                display: false,
-            }
-        },
-        indexAxis: 'y',
+
+// LEXIQUE
+
+let currentPage = document.querySelector(".cta--lexique");
+let intro = document.querySelector(".cta--intro");
+intro.addEventListener("click", introDisplayNone);
+
+
+if (currentPage != null) {
+    let navButton = document.querySelector(".cta--lexique");
+    navButton.addEventListener("click", toggleNavigation);
+
+    function toggleNavigation() {
+        if (document.body.hasAttribute("data-lexique")) {
+            document.body.removeAttribute("data-lexique");
+        } else {
+            document.body.setAttribute("data-lexique", true);
+        }
     }
-});
+
+    /* for (let i = 0; i < lien.length; i++) {
+
+        lien[i].addEventListener("click", closeMenu);
+        function closeMenu() {
+            document.body.removeAttribute("data-menu");
+        };
+    } */
+
+}
+
+function introDisplayNone() {
+    document.body.setAttribute("data-intro", true);
+}

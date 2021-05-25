@@ -41,25 +41,102 @@
     <header class="header header--play">
         <nav class="menu menu--play">
             <!-- Change this avec un logo-->
-            <h1 class="menu__logo p-bold">Logo</h1>
+            <h1 class="menu__logo p-bold"> <a href="index.html" class="link link--logo">Logo</a></h1>
         </nav>
     </header>
 
     <main class="main main--play">
         <div class="introduction">
             <!-- Change text introduction -->
-            <p>Le site est un comparatif de différentes Ford Mustang Coupé. Vous pouvez par exemple y comparer la
-                vitesse de pointe, le nombre de chevaux ou encore le bruit du moteur.</p>
-            <p>Explication des comparaisons entre deux modèles. Volonté de vulgariser le domaine de l’automobile, de
-                casser cette image peu accessible à cause de la technique.</p>
-            <a href="#" class="link link--cta">Débuter <svg class="link__svg" width="30" height="21" viewBox="0 0 30 21"
-                    fill="none">
-                    <path d="M0 10.5H28.5M28.5 10.5L19 1M28.5 10.5L19 20" stroke="#131313" />
-                </svg></a>
+            <div class="introduction__content">
+                <p>Le site est un comparatif de différentes Ford Mustang Coupé. Vous pouvez par exemple y comparer la
+                    vitesse de pointe, le nombre de chevaux ou encore le bruit du moteur.</p>
+                <p class="introduction__content__mg">Sélectionnez deux modèles au choix et lancez la comparaison. </p>
+                <button class="outline cta cta--intro">Débuter <svg class="cta__svg" width="24" height="16"
+                        viewBox="0 0 30 21" fill="none">
+                        <path d="M0 10.5H28.5M28.5 10.5L19 1M28.5 10.5L19 20" stroke="#131313" />
+                    </svg></button>
+            </div>
+        </div>
+
+        <div class="lexique-wrapper">
+            <!-- LEXIQUE START -->
+            <button class="outline cta cta--lexique">Lexique
+                <svg class="burger lexique__burger" width="40" height="37" viewBox="0 0 27 23" fill="none">
+                    <path d="M27 10H0V13H27V10Z" class="path_1" fill="#323232" />
+                    <path d="M27 20H0V23H27V20Z" class="path_2" fill="#323232" />
+                    <path d="M27 0H0V3H27V0Z" class="path_3" fill="#323232" />
+                </svg>
+            </button>
+            <div class="lexique">
+                <div class="lexique__item">
+                    <h3 class="title title--small">Vitesse de pointe</h3>
+                    <p>La vitesse de pointe est la plus haute vitesse que la voiture peut atteindre.</p>
+                </div>
+                <div class="lexique__item">
+                    <h3 class="title title--small">Cylindre</h3>
+                    <p>Le cylindre est un élément central du moteur. Le rôle du cylindre est d'offrir le cadre
+                        adéquat pour
+                        la réalisation du processus de combustion du moteur.</p>
+                </div>
+                <div class="lexique__item">
+                    <h3 class="title title--small">Temps d'accélération</h3>
+                    <p>C’est le temps qu’il faut à la voiture pour passer de 0 à 100 kilomètres heure.</p>
+                </div>
+                <div class="lexique__item">
+                    <h3 class="title title--small">Chevaux</h3>
+                    <p>C’est ce qui désigne la puissance maximale de la voiture. Plus il y a de chevaux et plus la
+                        voiture
+                        est puissante.</p>
+                </div>
+                <div class="lexique__item">
+                    <h3 class="title title--small">Production</h3>
+                    <p>C’est le nombre de voitures produites pour chaque modèle.</p>
+                </div>
+                <div class="lexique__item">
+                    <h3 class="title title--small">Boîte de vitesse</h3>
+                    <p>Une boîte de vitesse est un élément qui permet de transmettre l'énergie du moteur à la roue
+                        et donc
+                        de faire avancer le véhicule dans toutes les situations.</p>
+                </div>
+                <div class="lexique__item">
+                    <h3 class="title title--small">Poids à vide</h3>
+                    <p>C’est le poids de la voiture non chargée donc sans passager.</p>
+                </div>
+                <div class="lexique__item">
+                    <h3 class="title title--small">Prix</h3>
+                    <p>C’est le prix auquel la voiture a été vendue lors de la première commercialisation.</p>
+                </div>
+            </div>
+            <!-- LEXIQUE END -->
         </div>
 
         <div class="play">
             <section class="section section--principal">
+
+                <div class="play__container play__container--left">
+                    <span class="year">1964</span>
+                    <!-- !!!!!!!!!! CHANGER EN JPG !!!!!!!!!!!!!!!!!!!! -->
+                    <img src="assets/images/1964.png" srcset="assets/images/1964@2x.png" alt="Image d'une Ford Mustang"
+                        class="play__img play__img--left">
+                    <h2 class="title title--middle">GT 350 Shelby</h2>
+                </div>
+                <div class="play__container play__container--right">
+                    <span class="year">1964</span>
+                    <!-- add an after -->
+                    <img src="assets/images/1964.png" srcset="assets/images/1964@2x.png" alt="Image d'une Ford Mustang"
+                        class="play__img play__img--right">
+                    <h2 class="title title--middle">GT R</h2>
+                </div>
+
+
+                <div class="play__buttons">
+                    <button class="outline cta cta--comparer">Comparer</button>
+
+                    <button class="outline cta cta--changer">Changer</button>
+                </div>
+
+
 
                 <div class="comparaison">
                     <!-- Ajouter modale comparaison -->
@@ -69,14 +146,9 @@
                     </div>
                 </div>
             </section>
-        </div>
 
-        <div class="lexique">
-            <!-- en dur -->
-            <!-- data-section -->
-            <div class="my-chart-ctn">
-                <canvas id="myChart"></canvas>
-            </div>
+
+
         </div>
 
         <div class="selection">

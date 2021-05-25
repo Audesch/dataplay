@@ -1,0 +1,32 @@
+.play{
+    display: none;
+}
+
+body[data-intro]{
+  .play{
+      overflow-x: hidden;
+      display: block;
+      width: 100%;
+
+       &__img{
+        max-width: 590px;
+        max-height: 200px;
+        position: relative;
+        left: -250px;
+
+        &--left{
+            top: 1.5rem;
+        }
+        &--right{
+            top: 1.5rem;
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+  }
+}
+

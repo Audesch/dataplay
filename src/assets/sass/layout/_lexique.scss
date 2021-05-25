@@ -1,0 +1,50 @@
+.lexique__item{
+    display: none;
+}
+
+body[data-intro]{
+    .cta--lexique{
+        position: absolute;
+        top: 32px;
+        right: 3.2vw;
+        z-index: 7;
+    }
+}
+
+
+body[data-lexique] .cta--lexique{
+    color: transparent;
+ }
+
+body[data-lexique] .lexique{
+    background-color: var(--color-bg2);
+    position: absolute;
+    top: -32px;
+    left: 0;
+    z-index: 6;
+    width: 100vw;
+
+    &__item{
+        display: block;
+        margin-bottom: 3rem;
+        padding: 0 6.4vw;
+
+        &:first-child{
+            padding-top: 9rem;
+        }
+    }
+}
+
+
+body[data-lexique] .path_1{
+    transform: rotate(45deg) translateX(5px) translateY(-12px);
+}
+
+body[data-lexique] .path_2{
+    opacity: 0;
+}
+
+body[data-lexique] .path_3{
+    transform: rotate(-45deg) translateX(-13px) translateY(17px);
+}
+

@@ -1,1 +1,27 @@
 @use "utils/variables" as v;
+
+.cta{
+    font-family: runda, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+
+    &__svg{
+        margin-left: 8px;
+        margin-top: -3px;
+    }
+
+    &--lexique{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.burger{
+    width: 20px;
+    height: 20px;
+    padding-left: 8px;
+}

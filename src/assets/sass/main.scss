@@ -14,13 +14,16 @@
 @use 'components/charts';
 @use 'components/grids';
 @use 'components/links';
+@use 'components/lists';
 @use 'components/slider';
 @use 'components/type';
 
 @use 'layout/footer';
 @use 'layout/header';
+@use 'layout/intro';
 @use 'layout/lexique';
 @use 'layout/menu';
+@use 'layout/play';
 
 @use 'utils/variables'; 
 
@@ -41,12 +44,26 @@ TYPE
 
 LANDING 
 	OK -- HTML
-	-- SASS
+	-- SASS (Aureliane)
 
 CREDITS
-	-- Ajouter crédits 
+	-- Ajouter crédits Landing (Aureliane)
 
 JS & JSON
-	-- Import JSON dans le projet
-	-- Import GSAP dans projet
+	OK -- Import JSON dans le projet
+	-- Ajouter nuances de couleur pour chaque modèle
+	-- Import GSAP dans projet (à voir plus tard)
+
+INTRO
+	OK -- Bouton page principale
+
+LEXIQUE
+	OK -- HTML
+	OK -- JS
+	OK -- CSS
+
+PAGE PRINCIPALE	
+	-- Setup images
+	-- Setup boutons
+	-- Setup audio
 */
