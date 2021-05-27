@@ -13,10 +13,17 @@
         margin-left: 8px;
         margin-top: -3px;
     }
+    &--intro{
+        padding-left: 0%;
+    }
 
     &--lexique{
         display: flex;
         align-items: center;
+    }
+
+    &--comparer, &--changer, &--actif{
+        padding: 7px 10px;
     }
 }
 
@@ -24,4 +31,8 @@
     width: 20px;
     height: 20px;
     padding-left: 8px;
+}
+
+.play__sound{
+    margin-top: 1.5rem;
 }

@@ -1,3 +1,5 @@
+@use "utils/variables" as v;
+
 .menu{
     
     &__logo{
@@ -6,5 +8,8 @@
         top: 16px;
         left: 6.4vw;
         z-index: 5;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 500;
     }
 }

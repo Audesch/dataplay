@@ -12,7 +12,6 @@
 
 @use 'components/buttons';
 @use 'components/charts';
-@use 'components/grids';
 @use 'components/links';
 @use 'components/lists';
 @use 'components/slider';
@@ -21,9 +20,11 @@
 @use 'layout/footer';
 @use 'layout/header';
 @use 'layout/intro';
+@use 'layout/landing';
 @use 'layout/lexique';
 @use 'layout/menu';
 @use 'layout/play';
+@use 'layout/selection';
 
 @use 'utils/variables'; 
 
@@ -67,3 +68,19 @@ PAGE PRINCIPALE
 	-- Setup boutons
 	-- Setup audio
 */
+
+/* TO DO BEFORE REMISE 
+
+-- Liens hover, focus, active btns
+-- Module comparer et affichage au click;
+-- Responsive play.html
+-- Demander à Aureliane une image de la comparaison
+-- Ajouter logo
+OK -- Check W3C
+-- Ajouter affichage sélection / bouton disabled 
+-- Ajouter sons
+
+-- modifier année à la sélection des deux modèles
+
+*/
+

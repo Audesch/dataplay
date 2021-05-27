@@ -1,0 +1,65 @@
+.footer{
+    padding: 1rem 6.4vw;
+    background-color: var(--color-bg2);
+
+    &__logo{
+        padding-top: 3rem;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: solid 0.2px var(--color-details);
+        padding-bottom: 17px;
+
+        & path{
+            fill: var(--color-text);
+        }
+    }
+
+    &__list{
+        list-style: none;
+        margin-bottom: 51px;
+        padding-left: 0%;
+    }
+    &__copy{
+        border-top: solid 1px var(--color-details);
+        padding-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        &__dwm path:first-child{
+            fill: var(--color-text);
+        }
+    }
+
+    &__item{
+        margin-bottom: 8px;
+    }
+
+    &--case{
+        margin-top: 9rem;
+    }
+
+    &__project{
+        margin-top: 3rem;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .wrapper{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 9rem;
+        > *{
+            margin-top: -6rem;
+            margin-left: 6rem;
+        }
+    }
+ }
+
+@media (min-width: 768px){
+    .footer__logo{
+        padding-top: 36px;
+    }
+ }

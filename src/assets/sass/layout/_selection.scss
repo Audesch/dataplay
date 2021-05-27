@@ -1,0 +1,71 @@
+@use "utils/variables" as v;
+
+.select-ctn{
+    display: none;
+}
+
+[data-select] .select-ctn, .select__actif{
+    display: block;
+}
+
+[data-select] .cta--changer{
+    position: absolute;
+    top: 32px;
+    right: 6.4vw;
+    z-index: 8;
+
+    &:disabled{
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+
+[data-select] .cta--actif{
+    position: absolute;
+    bottom: 1.5rem;
+    z-index: 8;
+    left: 0; 
+    width: 100vw;
+    place-content: center;
+}
+
+[data-select] .select__title{ 
+    position: absolute;
+    width: 100%;
+    top: 96px;
+    left: 0%;
+    text-align: center;
+}
+
+[data-select] .select-ctn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    background-color: var(--color-bg);
+    z-index: 7;
+}
+
+[data-select] .select{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 128px 0px;
+
+    &__item{
+        margin: 3rem 6.4vw 0px 6.4vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__year{
+            margin-bottom: 8px;
+        }
+
+        &__img{
+            width: 124px;
+        }
+    }
+}
+

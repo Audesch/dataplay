@@ -1,12 +1,21 @@
-.lexique__item{
+@use "utils/variables" as v;
+
+.lexique-wrapper{
     display: none;
 }
 
 body[data-intro]{
+    .lexique-wrapper{
+        display: block;
+    }
+    .lexique__item{
+        display: none;
+    }
+
     .cta--lexique{
         position: absolute;
         top: 32px;
-        right: 3.2vw;
+        right: 6.4vw;
         z-index: 7;
     }
 }

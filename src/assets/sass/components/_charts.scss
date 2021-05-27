@@ -1,4 +1,27 @@
-.my-chart-ctn {
-    width: 200px;
-    background-color: lightgrey;
-  }
+.my-chart-container {
+  width: 200px;
+  background-color: lightgrey;
+}
+
+.listcar{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
+
+
+// Voitures tailles
+
+.choix{
+  width: 150px;
+  height: auto;
+  border: 1px solid white;
+  filter: saturate(0.1);
+}
+
+.selected{
+  border: 1px solid black;
+  filter: saturate(1);
+}

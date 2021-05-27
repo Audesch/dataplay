@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/osy6uar.css">
 
     <script src="assets/js/main.min.js" defer></script>
+    <script src="assets/data/data.json" defer></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.1/chart.min.js"></script>
 
     <link rel="stylesheet" href="assets/css/main.css">
@@ -41,13 +43,12 @@
     <header class="header header--play">
         <nav class="menu menu--play">
             <!-- Change this avec un logo-->
-            <h1 class="menu__logo p-bold"> <a href="index.html" class="link link--logo">Logo</a></h1>
+            <h1 class="menu__logo"> <a href="index.html" class="link link--logo">MustEvo</a></h1>
         </nav>
     </header>
 
     <main class="main main--play">
         <div class="introduction">
-            <!-- Change text introduction -->
             <div class="introduction__content">
                 <p>Le site est un comparatif de différentes Ford Mustang Coupé. Vous pouvez par exemple y comparer la
                     vitesse de pointe, le nombre de chevaux ou encore le bruit du moteur.</p>
@@ -111,51 +112,122 @@
             <!-- LEXIQUE END -->
         </div>
 
+
+
+
+
+
+
         <div class="play">
-            <section class="section section--principal">
 
-                <div class="play__container play__container--left">
-                    <span class="year">1964</span>
-                    <!-- !!!!!!!!!! CHANGER EN JPG !!!!!!!!!!!!!!!!!!!! -->
-                    <img src="assets/images/1964.png" srcset="assets/images/1964@2x.png" alt="Image d'une Ford Mustang"
-                        class="play__img play__img--left">
-                    <h2 class="title title--middle">GT 350 Shelby</h2>
-                </div>
-                <div class="play__container play__container--right">
-                    <span class="year">1964</span>
-                    <!-- add an after -->
-                    <img src="assets/images/1964.png" srcset="assets/images/1964@2x.png" alt="Image d'une Ford Mustang"
-                        class="play__img play__img--right">
-                    <h2 class="title title--middle">GT R</h2>
+            <div class="play__ctn">
+                <div class="play__ctn__model play__ctn__model--left">
+                    <div class="play__ctn__model__text">
+                        <span class="year" id="year-left">1964</span>
+                        <h2 class="title title--middle" id="name-left">Mustang coupé</h2>
+                        <button class="play__sound sound--left"> ▷</button>
+                    </div>
+                    <img src="assets/images/car2.jpg" srcset="assets/images/car1@2x.jpg" alt="Image d'une Ford Mustang"
+                        class="play__img play__img--left mustang-left">
                 </div>
 
+                <div class="play__ctn__model play__ctn__model--right">
+                    <div class="play__ctn__model__text">
+                        <span class="year" id="year-right">1965</span>
+                        <h2 class="title title--middle" id="name-right">Shelby GT</h2>
+                        <button class="play__sound sound--left"> ▷</button>
+                    </div>
 
-                <div class="play__buttons">
-                    <button class="outline cta cta--comparer">Comparer</button>
+                    <img src="assets/images/car19.jpg" srcset="assets/images/car19@2x.jpg"
+                        alt="Image d'une Ford Mustang" class="play__img play__img--right mustang-right">
+                </div>
+            </div>
 
+            <div class="play__buttons">
+                <div class="play__buttons__compare">
+                    <button class="outline cta cta--comparer comparator">Comparer</button>
+                </div>
+
+                <div class="play__buttons__select">
                     <button class="outline cta cta--changer">Changer</button>
-                </div>
 
+                    <div class="select-ctn">
 
+                        <p class="select__title p-bold">Sélectionnez 2 Mustang à comparer</p>
+                        <div class="select listcar">
 
-                <div class="comparaison">
-                    <!-- Ajouter modale comparaison -->
-                    <div class="modale-comparaison">
-                        <!-- Jérôme amuse toi ici -->
-                        <!-- data-section -->
+                        </div>
+
+                        <button class="outline cta cta--actif">Confirmer</button>
+
                     </div>
                 </div>
-            </section>
+            </div>
 
 
 
-        </div>
-
-        <div class="selection">
-            <!-- data-section -->
-            <!-- interaction json -->
+            <div class="charts-ctn">
+                <div class="charts">
+                    <div class="chart__item chart__item--1">
+                        <div class="my-chart-container">
+                            <canvas class="canvas" id="myChart1"></canvas>
+                        </div>
+                        <h4 class="chart__item__title">Vitesse de pointe</h4>
+                    </div>
+                    <div class="chart__item chart__item--2">
+                        <div class="my-chart-container">
+                            <canvas class="canvas" id="myChart2"></canvas>
+                        </div>
+                        <h4 class="chart__item__title">Cylindrée</h4>
+                    </div>
+                    <div class="chart__item chart__item--3">
+                        <div class="my-chart-container">
+                            <canvas class="canvas" id="myChart3"></canvas>
+                        </div>
+                        <h4 class="chart__item__title">Temps d'accélération</h4>
+                    </div>
+                    <div class="chart__item chart__item--4">
+                        <div class="my-chart-container">
+                            <canvas class="canvas" id="myChart4"></canvas>
+                        </div>
+                        <h4 class="chart__item__title">Chevaux</h4>
+                    </div>
+                    <div class="chart__item chart__item--5">
+                        <div class="my-chart-container">
+                            <canvas class="canvas" id="myChart5"></canvas>
+                        </div>
+                        <h4 class="chart__item__title">Prix</h4>
+                    </div>
+                    <div class="chart__item chart__item--6">
+                        <div class="my-chart-container">
+                            <canvas class="canvas" id="myChart6"></canvas>
+                        </div>
+                        <h4 class="chart__item__title">Production</h4>
+                    </div>
+                    <div class="chart__item chart__item--7">
+                        <div class="my-chart-container">
+                            <canvas class="canvas" id="myChart7"></canvas>
+                        </div>
+                        <h4 class="chart__item__title">Poids à vide</h4>
+                    </div>
+                    <div class="chart__item chart__item--8">
+                        <div class="my-chart-container">
+                            <canvas class="canvas" id="myChart8"></canvas>
+                        </div>
+                        <h4 class="chart__item__title">Boite de vitesse</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
+
+
+
+
+
+
+
+
 
 
 </body>
