@@ -35,7 +35,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    
     background-color: var(--color-bg);
     z-index: 7;
 }
@@ -62,3 +61,18 @@
     }
 }
 
+@media (min-width: 500px){
+    [data-select] .select-ctn{
+        height: 100vh;
+    }
+    [data-select] .select{
+        margin-top: 3rem;
+        justify-content: left;
+    }
+ }
+
+@media (min-width: 1024px){
+    [data-select] .select{
+        justify-content: center;
+    }
+ }

@@ -29,7 +29,7 @@ body[data-lexique] .lexique{
     background-color: var(--color-bg2);
     position: absolute;
     top: -32px;
-    left: 0;
+    right: 0;
     z-index: 6;
     width: 100vw;
 
@@ -37,6 +37,7 @@ body[data-lexique] .lexique{
         display: block;
         margin-bottom: 3rem;
         padding: 0 6.4vw;
+        max-width: 340px;
 
         &:first-child{
             padding-top: 9rem;
@@ -57,3 +58,12 @@ body[data-lexique] .path_3{
     transform: rotate(-45deg) translateX(-13px) translateY(17px);
 }
 
+
+@media (min-width: 1024px){
+
+    body[data-lexique] .lexique{
+        width: 40vw;
+        height: 100vh;
+        overflow-y: scroll;
+    }
+}

@@ -1,10 +1,27 @@
 .my-chart-container {
-  width: 200px;
+  width: 110px;
+  padding: 0px 4rem;
+  margin-top: 3rem;
 }
-
+.charts{
+  display: flex;
+  padding: 3rem 6.4vw;
+  padding-bottom: 0;
+  justify-content: center;
+}
 .listcar{
   display: flex;
   flex-wrap: wrap;
+}
+.chart__item{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__title{
+    padding: 0px 1rem;
+  }
 }
 
 
