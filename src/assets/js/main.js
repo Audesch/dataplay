@@ -189,3 +189,29 @@ fetch(('assets/data/data.json'))
 
         }
     })
+
+
+//landing anim voiture
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".img--header__gauche", {
+    scrollTrigger: {
+        trigger: ".header--landing",
+        start: "top 30%",
+        end: "bottom 20%",
+        scrub: 1,
+    },
+
+    x: -200,
+})
+
+gsap.to(".img--header__droite", {
+    scrollTrigger: {
+        trigger: ".header--landing",
+        start: "top 30%",
+        end: "bottom 20%",
+        scrub: 1,
+    },
+
+    x: 200,
+})
