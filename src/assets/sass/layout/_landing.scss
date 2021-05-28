@@ -108,7 +108,7 @@ body{
         grid-template-rows: repeat(2, 1fr);
     }
     .section--team{
-        text-align: center;
+        text-align: left;
     }
 
     .team{
@@ -117,6 +117,13 @@ body{
 
         &--text{
             text-align: left;
+        }
+        
+        &__name{
+            border-bottom: solid 1px var(--color-primary);
+            margin-top: 2rem;
+            padding-bottom: 32px;
+            text-align: center;
         }
 
         &--1{

@@ -12,6 +12,11 @@
         text-transform: uppercase;
         line-height: 1;
     }
+    
+
+    &--hero svg{
+        margin-left: 1rem;
+    }
 
     &--footer{
         &:hover, &:focus{
@@ -21,6 +26,22 @@
         &:active{
             color: var(--color-text);
             border: 0;
+        }
+    }
+}
+
+.cta{
+    & svg{
+        margin-left: 1rem;
+    }
+    
+    &:hover, &focus{
+        font-weight: 600;
+        transition: 0.1s;
+        
+
+        &:active{
+            color: var(--color-primary);
         }
     }
 }

@@ -27,9 +27,6 @@
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
 
-    <!-- FONTS -->
-    <link rel="stylesheet" href="https://use.typekit.net/osy6uar.css">
-
     <script src="assets/js/main.min.js" defer></script>
     <script src="assets/data/data.json" defer></script>
 
@@ -44,14 +41,15 @@
         <nav class="menu menu--play">
             <!-- Change this avec un logo-->
             <h1 class="menu__logo"> <a href="index.html" class="link link--logo">MustEvo</a></h1>
+            <h2 class="hidden">MustEvolution</h2>
         </nav>
     </header>
 
     <main class="main main--play">
         <div class="introduction">
             <div class="introduction__content">
-                <p>Le site est un comparatif de différentes Ford Mustang Coupé. Vous pouvez par exemple y comparer la
-                    vitesse de pointe, le nombre de chevaux ou encore le bruit du moteur.</p>
+                <p>Comparez différents modèles de Ford Mustang selon différents critères définissant une voiture.
+                </p>
                 <p class="introduction__content__mg">Sélectionnez deux modèles au choix et lancez la comparaison. </p>
                 <button class="outline cta cta--intro">Débuter <svg class="cta__svg" width="24" height="16"
                         viewBox="0 0 30 21" fill="none">
@@ -69,9 +67,10 @@
                     <path d="M27 0H0V3H27V0Z" class="path_3" fill="#323232" />
                 </svg>
             </button>
+
             <div class="lexique">
                 <div class="lexique__item">
-                    <h3 class="title title--small">Vitesse de pointe</h3>
+                    <h3 class="title title--small" id="variable--number">Vitesse de pointe :</h3>
                     <p>La vitesse de pointe est la plus haute vitesse que la voiture peut atteindre.</p>
                 </div>
                 <div class="lexique__item">
@@ -125,7 +124,6 @@
                     <div class="play__ctn__model__text">
                         <span class="year" id="year-left">1964</span>
                         <h2 class="title title--middle" id="name-left">Mustang coupé</h2>
-                        <button class="play__sound sound--left"> ▷</button>
                     </div>
                     <img src="assets/images/car2.jpg" srcset="assets/images/car1@2x.jpg" alt="Image d'une Ford Mustang"
                         class="play__img play__img--left mustang-left">
@@ -135,7 +133,7 @@
                     <div class="play__ctn__model__text">
                         <span class="year" id="year-right">1965</span>
                         <h2 class="title title--middle" id="name-right">Shelby GT</h2>
-                        <button class="play__sound sound--left"> ▷</button>
+                        <h3 class="hidden">1965</h3>
                     </div>
 
                     <img src="assets/images/car19.jpg" srcset="assets/images/car19@2x.jpg"
@@ -146,6 +144,8 @@
             <div class="play__buttons">
                 <div class="play__buttons__compare">
                     <button class="outline cta cta--comparer comparator">Comparer</button>
+                    <button class="outline cta cta--close comparator">Fermer</button>
+
                 </div>
 
                 <div class="play__buttons__select">
@@ -157,8 +157,6 @@
                         <div class="select listcar">
 
                         </div>
-
-                        <button class="outline cta cta--actif">Confirmer</button>
 
                     </div>
                 </div>
@@ -178,7 +176,7 @@
                         <div class="my-chart-container">
                             <canvas class="canvas" id="myChart2"></canvas>
                         </div>
-                        <h4 class="chart__item__title">Cylindrée</h4>
+                        <h4 class="chart__item__title">Boite de vitesse</h4>
                     </div>
                     <div class="chart__item chart__item--3">
                         <div class="my-chart-container">
@@ -214,7 +212,8 @@
                         <div class="my-chart-container">
                             <canvas class="canvas" id="myChart8"></canvas>
                         </div>
-                        <h4 class="chart__item__title">Boite de vitesse</h4>
+                        <h4 class="chart__item__title">Cylindrée</h4>
+
                     </div>
                 </div>
             </div>

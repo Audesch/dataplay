@@ -1,7 +1,35 @@
 @use "utils/variables" as v;
 
+
+@font-face {
+    font-family: "sora";
+    src: url(../fonts/Sora-Regular.woff2) format("font-woff2"),
+        url(../fonts/Sora-Regular.woff) format("font-woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "sora";
+    src: url(../fonts/Sora-Medium.woff2) format("font-woff2"),
+        url(../fonts/Sora-Medium.woff) format("font-woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "sora";
+    src: url(../fonts/Sora-SemiBold.woff2) format("font-woff2"),
+        url(../fonts/Sora-SemiBold.woff) format("font-woff");
+    font-style: normal;
+}
+@font-face {
+    font-family: "sora";
+    src: url(../fonts/Sora-Bold.woff2) format("font-woff2"),
+        url(../fonts/Sora-Bold.woff) format("font-woff");
+    font-style: normal;
+}
+
 body{
-    font-family: runda, sans-serif;
+    font-family: sora, sans-serif;
     font-size: 16px;
     line-height: 1.4;
     font-weight: var(--font-regular);
@@ -13,7 +41,7 @@ body{
 /* MOBILE TYPE */
 /* ratio 1.250 */
 .title{
-    font-family: aktiv-grotesk, sans-serif;
+    font-family: sora, sans-serif;
     line-height: 1.2;
 
     &--big{

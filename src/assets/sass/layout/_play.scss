@@ -8,6 +8,10 @@
     display: none;
 }
 
+.cta--close{
+    display: none;
+}
+
 body[data-intro]{
   .play{
       overflow-x: hidden;
@@ -93,6 +97,13 @@ body[data-compare]{
             display: flex;
             flex-direction: column;
         }
+        .cta--close{
+            display: block;
+        }
+        .cta--comparer{
+            display: none;
+        }
+        
       }
     }
 
@@ -108,5 +119,21 @@ body[data-compare]{
     .charts{
         overflow-y: scroll;
         height: 100%;
+    }
+}
+
+
+@media (min-width: 500px){
+
+    .play__img--right{
+        transform: scaleX(-1);
+    }
+
+    .play{
+        &__ctn{
+            &__model{
+                display: flex;
+            }
+        }
     }
 }
